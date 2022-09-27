@@ -1,0 +1,6 @@
+{
+    "manifest_version": 3,
+    "name": "LinkedIn Post Remover",
+    "version": "1.0",
+    "description": "Removes all the posts that contain the words you doesn't like."
+}
