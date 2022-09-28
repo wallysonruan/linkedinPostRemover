@@ -1,9 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <style>
+        #input{
+            display: flex;
+        }
+
+        footer{
+            background-color: red;
+        }
+
+        footer ul{
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        footer ul li{
+            margin: 0;
+            list-style: none;
+        }
+    </style>
 </head>
 <body>
-    <label for="undesired-words-input">Type here the words you want to filter the posts with.</label>
-    <input type="text" name="Field to type in the undesired words" id="undesired-words-input">
+    <div>
+        <label for="undesired-words-input">Type here the words you want to filter the posts with.</label>
+        <div id="input">
+            <input type="text" name="Field to type in the undesired words" id="undesired-words-input">
+            <input type="button" value="+">
+        </div>
+    </div>
+    <div>
+        <p>Chosen words</p>
+        <ul>
+            <li></li>
+        </ul>
+    </div>
 </body>
+<footer>
+    <ul>
+        <li>GIT</li>
+        <li>LK</li>
+    </ul>
+</footer>
 </html>
