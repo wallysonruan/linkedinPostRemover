@@ -20,7 +20,7 @@ The image below displays the behaviors I want the extension to have.
 **When** I click on the PUZZLE PIECE icon <br>
 **Then** I can see Linkedin Posts Remover's (LPR) icon
 
-- [ ] BEHAVIOR 2
+- [X] BEHAVIOR 2
 
 **Given** that I've fixed the LPR's icon to my toolbar <br>
 **When** I click on it <br>
@@ -29,5 +29,22 @@ The image below displays the behaviors I want the extension to have.
 - [ ] BEHAVIOR 3
 
 **Given** that opened the LPR popup <br>
-**When** I type in a word and press Enter <br>
+**When** I type in a word and press Enter<br>
+**OR** Click on the `+` button <br>
 **Then** I can see the word below, formated as a tag
+
+- [ ] BEHAVIOR 4
+
+**Given** that opened the LPR popup <br>
+**When** Look at the footbar<br>
+**Then** I can see the icons of Github and Linkedin
+
+- [ ] BEHAVIOR 5
+
+**Given** that I clicked on the GitHub icon <br>
+**Then** I'm taken to the project GitHub repo
+
+- [ ] BEHAVIOR 6
+
+**Given** that I clicked on the Linkedin icon <br>
+**Then** I'm taken to the developers LinkedIn profile
