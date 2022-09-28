@@ -1,50 +1,23 @@
-# linkedinPostRemover
+### ROTEIRO
 
-I'll be using this project to both learn about developing Google Chrome Extensions and to solve a problem of some connections of mine.
+#### PRODUTO MÍNIMO VIÁVEL (MVP)
+- [X] Criar o manifesto e adicionar as configurações básicas (versão, nome, descrição, ...)
+- [X] Adicionar um pop up
+- [X] Adicionar o campo de input e botão de submit
+- [X] Adicionar elemento para conter a lista das palavras
+- [ ] Adicionar gatilho que mapeia as páginas e avisa quando o usuário acessar o LinkedIn
+  - [ ] Adicionar mapeador
+  - [ ] Adicionar mensagem a ser enviada quando a escuta for ativada
+- [ ] Adicionar receptor de mensagem vinda do `Background.js`
+- [ ] Adicionar lógica ligada ao botão de adição de palavras que quando apertado irá adicionar a palavra à lista de palavras
+- [ ] Adicionar um iterador que, quando uma página do LinkedIn for aberta, irá percorrer a lista de posts carregados e verificar se contêm alguma das palavras da lista de palavras escolhidas
+  - [ ] Adicionar cenário TRUE, que removerá o post da lista 
 
-## SIMILAR PROJECTS
-
-I've searched for extensions that solve the exact problem I intend to solve or similar ones, and I found these listed below.
-- [LinkOff - Filter and Customizer for LinkedIn™](https://chrome.google.com/webstore/detail/linkoff-filter-and-custom/maanaljajdhhnllllmhmiiboodmoffon?hl=pt-BR)
-- [Feedblocker](https://chrome.google.com/webstore/detail/feedblocker/obehkecmojmkiikdffbmnobnnmgikkfa?hl=pt-BR)
-- [SimplyFeed - LinkedIn Feed Filter](https://chrome.google.com/webstore/detail/simplyfeed-linkedin-feed/hpjgkdecioodgjhhdoagefbbdlljkpic?hl=pt-BR)
-
-### BEHAVIORS TO CODE
-
-The image below displays the behaviors I want the extension to have.
-![Behaviors wanted](README_Images/linkedinPostsRemover.drawio.svg)
-
-- [X] BEHAVIOR 1
-
-**Given** that I'm on a LinkedIn page <br>
-**When** I click on the PUZZLE PIECE icon <br>
-**Then** I can see Linkedin Posts Remover's (LPR) icon
-
-- [X] BEHAVIOR 2
-
-**Given** that I've fixed the LPR's icon to my toolbar <br>
-**When** I click on it <br>
-**Then** I can see a pop up containing a input field
-
-- [ ] BEHAVIOR 3
-
-**Given** that opened the LPR popup <br>
-**When** I type in a word and press Enter<br>
-**OR** Click on the `+` button <br>
-**Then** I can see the word below, formated as a tag
-
-- [ ] BEHAVIOR 4
-
-**Given** that opened the LPR popup <br>
-**When** Look at the footbar<br>
-**Then** I can see the icons of Github and Linkedin
-
-- [ ] BEHAVIOR 5
-
-**Given** that I clicked on the GitHub icon <br>
-**Then** I'm taken to the project GitHub repo
-
-- [ ] BEHAVIOR 6
-
-**Given** that I clicked on the Linkedin icon <br>
-**Then** I'm taken to the developers LinkedIn profile
+#### PÓS MVP
+- [ ] Adicionar o ícone da extensão
+- [ ] Criar formatação que transformará as palavras em tags
+- [ ] Adicionar opção de edição de palavra escolhida
+- [ ] Adicionar opção de exclusão de palavra escolhida
+- [X] Adicionar um rodapé contendo links para o repositório da extensão e para o perfil do LinkedIn do desenvolvedor
+- [ ] Adicionar redirecionador para reagir aos cliques nos ícones do GitHub e do LinkedIn
+  - [ ] Verificar quais permissões são necessárias para abrir uma nova página
