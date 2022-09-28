@@ -27,7 +27,7 @@ Procurei por extensões que resolvessem o mesmo problema ou similares, e encontr
 **Mas** se eu abrir outra página que não seja a Feed do LinkedIn
 **Então** eu vejo apenas uma mensagem dizendo que não estou na página Feed do LinkedIn
 
-- [ ] 3
+- [X] 3
 
 **Dado** que eu abri a janelinha do LPR <br>
 **Quando** eu escrever uma palavra e apertar `ENTER` <br>
@@ -57,10 +57,10 @@ Procurei por extensões que resolvessem o mesmo problema ou similares, e encontr
 - [X] Adicionar um pop up
 - [X] Adicionar o campo de input e botão de submit
 - [X] Adicionar elemento para conter a lista das palavras
-- [ ] Adicionar função que mapeia as páginas
-- [ ] Adicionar UI para quando estiver na página "Feed" do LinkedIn
-- [ ] Adicionar UI para quando não estiver na página "Feed" no LinkedIn
-- [ ] Adicionar lógica ligada ao botão de adição de palavras que quando apertado irá adicionar a palavra à lista de palavras
+- [X] Adicionar função que mapeia as páginas
+- [X] Adicionar UI para quando estiver na página "Feed" do LinkedIn
+- [X] Adicionar UI para quando não estiver na página "Feed" no LinkedIn
+- [X] Adicionar lógica ligada ao botão de adição de palavras que quando apertado irá adicionar a palavra à lista de palavras
   - [ ] Adicionar lista de palavras no STORAGE do Chrome
   - [ ] Adicionar coletador da lista do STORAGE
 - [ ] Adicionar um iterador que, quando uma página do LinkedIn for aberta, irá percorrer a lista de posts carregados e verificar se contêm alguma das palavras da lista de palavras escolhidas
