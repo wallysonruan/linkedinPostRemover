@@ -1,0 +1,21 @@
+.container{
+    width: 15rem;
+    min-height: 5rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#input{
+    display: flex;
+}
+
+footer ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}

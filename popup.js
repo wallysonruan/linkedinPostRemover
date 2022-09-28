@@ -12,6 +12,9 @@ document.addEventListener("DOMContentLoaded", async () => {
 
     }else{
     const container = document.getElementsByClassName("container")[0];
-    container.innerHTML = "oi";
+    container.innerHTML = 
+    `<div>
+        <p>You're not on the LinkedIn home page.</p>
+    </div>`;
     }
 });

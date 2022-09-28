@@ -1,41 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        #input{
-            display: flex;
-        }
-
-        footer{
-            background-color: red;
-        }
-
-        footer ul{
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: space-evenly;
-        }
-
-        footer ul li{
-            margin: 0;
-            list-style: none;
-        }
-    </style>
+    <script type="module" src="./popup.js"></script>
+    <link rel="stylesheet" href="./popup.css">
 </head>
 <body>
-    <div>
-        <label for="undesired-words-input">Type here the words you want to filter the posts with.</label>
-        <div id="input">
-            <input type="text" name="Field to type in the undesired words" id="undesired-words-input">
-            <input type="button" value="+">
-        </div>
-    </div>
-    <div>
-        <p>Chosen words</p>
-        <ul>
-            <li></li>
-        </ul>
+    <div class="container">
+        <section>
+            <label for="undesired-words-input">Type here the words you want to filter the posts with.</label>
+            <div id="input">
+                <input type="text" name="Field to type in the undesired words" id="undesired-words-input">
+                <input type="button" value="+">
+            </div>
+        </section>
+        <section>
+            <p>Chosen words</p>
+            <ul>
+                <li></li>
+            </ul>
+        </section>
     </div>
 </body>
 <footer>

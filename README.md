@@ -21,11 +21,11 @@ Procurei por extensões que resolvessem o mesmo problema ou similares, e encontr
 - [X] 2
 
 **Dado** que eu fixei o ícone do LPR à minha barra de tarefas <br>
-**E** estou numa página do LinkedIn 
+**E** estou na página Feed do LinkedIn 
 **Quando** eu clicar nele <br>
 **Então** eu consigo ver uma janelinha com um campo para escrever as palavras
-**Mas** se eu abrir outra página que não seja do LinkedIn
-**Então** eu vejo apenas uma mensagem dizendo que não estou numa página do LinkedIn 
+**Mas** se eu abrir outra página que não seja a Feed do LinkedIn
+**Então** eu vejo apenas uma mensagem dizendo que não estou na página Feed do LinkedIn
 
 - [ ] 3
 
@@ -57,11 +57,12 @@ Procurei por extensões que resolvessem o mesmo problema ou similares, e encontr
 - [X] Adicionar um pop up
 - [X] Adicionar o campo de input e botão de submit
 - [X] Adicionar elemento para conter a lista das palavras
-- [ ] Adicionar gatilho que mapeia as páginas e avisa quando o usuário acessar o LinkedIn
-  - [ ] Adicionar mapeador
-  - [ ] Adicionar mensagem a ser enviada quando a escuta for ativada
-- [ ] Adicionar receptor de mensagem vinda do `Background.js`
+- [ ] Adicionar função que mapeia as páginas
+- [ ] Adicionar UI para quando estiver na página "Feed" do LinkedIn
+- [ ] Adicionar UI para quando não estiver na página "Feed" no LinkedIn
 - [ ] Adicionar lógica ligada ao botão de adição de palavras que quando apertado irá adicionar a palavra à lista de palavras
+  - [ ] Adicionar lista de palavras no STORAGE do Chrome
+  - [ ] Adicionar coletador da lista do STORAGE
 - [ ] Adicionar um iterador que, quando uma página do LinkedIn for aberta, irá percorrer a lista de posts carregados e verificar se contêm alguma das palavras da lista de palavras escolhidas
   - [ ] Adicionar cenário TRUE, que removerá o post da lista 
 
