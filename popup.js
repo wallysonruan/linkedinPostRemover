@@ -1,12 +1,11 @@
 const inputBar = document.getElementById("words__input");
 const inputButton = document.getElementById("input-bttn");
+let listOf = [];
 
 document.addEventListener("DOMContentLoaded", async () => {
     const activeTab = await getCurrentTab();
 
-    if(activeTab.url.includes("linkedin.com/feed/")){
-
-    }else{
+    if(! activeTab.url.includes("linkedin.com/feed/")){
         const container = document.getElementsByClassName("container")[0];
         container.innerHTML = 
             `<div>
@@ -22,25 +21,37 @@ async function getCurrentTab() {
     return tab;
 }
 
-inputButton.addEventListener("click",  IfInputBarNotEmpty__addToList);
+inputButton.addEventListener("click", IfInputBarNotEmpty__addToListElement);
 inputBar.addEventListener("keydown", event => {
     if(event.key == "Enter"){
-         IfInputBarNotEmpty__addToList();
+        IfInputBarNotEmpty__addToListElement();
     }
 })
 
-function IfInputBarNotEmpty__addToList(){
+function IfInputBarNotEmpty__addToListElement(){
     if(inputBar.value){
-        const newTag = wordToTag(inputBar.value);
-        const list = document.getElementsByClassName("words__list")[0];
-        list.appendChild(newTag);
-    
+        inputBar__toListOfWords();
+        fromList__toListElement();
         clearTheInputBar();
     }
 }
 
+function inputBar__toListOfWords(){
+    listOf.push(inputBar.value);
+}
+
 function clearTheInputBar(){
     inputBar.value = "";
+}
+
+function fromList__toListElement(){
+    const list = document.getElementsByClassName("words__list")[0];
+    list.innerHTML = "";
+
+    for(let i = 0; i < listOf.length; i++){
+        const newTag = wordToTag(listOf[i]);
+        list.appendChild(newTag);
+    }
 }
 
 function wordToTag(word){
