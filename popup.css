@@ -16,14 +16,24 @@ section{
     width: 100%;
 }
 
+.icon{
+    height: 1.5rem;
+}
+
 .input__container{
     display: flex;
+}
+
+.words__list_title{
+
 }
 
 .words__list{
     margin: 0;
     padding: 0;
     width: 100%;
+    max-height: 15rem;
+    overflow: scroll;
 
     display: flex;
     justify-content: space-evenly;
@@ -38,7 +48,7 @@ section{
 }
 
 .words__tag{
-    padding: 0 0.5rem;
+    padding: 0 0.7rem;
 
     display: flex;
     justify-content: space-between;
@@ -67,7 +77,6 @@ section{
 .footer__list{
     margin: 1rem 0 1rem 0;
     padding: 0;
-    background-color: red;
 
     display: flex;
     justify-content: space-evenly;
