@@ -21,10 +21,10 @@ Procurei por extensões que resolvessem o mesmo problema ou similares, e encontr
 - [X] 2
 
 **Dado** que eu fixei o ícone do LPR à minha barra de tarefas <br>
-**E** estou na página Feed do LinkedIn 
+**E** estou na página Feed do LinkedIn <br>
 **Quando** eu clicar nele <br>
-**Então** eu consigo ver uma janelinha com um campo para escrever as palavras
-**Mas** se eu abrir outra página que não seja a Feed do LinkedIn
+**Então** eu consigo ver uma janelinha com um campo para escrever as palavras<br>
+**Mas** se eu abrir outra página que não seja a Feed do LinkedIn<br>
 **Então** eu vejo apenas uma mensagem dizendo que não estou na página Feed do LinkedIn
 
 - [X] 3
