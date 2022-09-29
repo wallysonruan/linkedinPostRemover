@@ -22,23 +22,25 @@ async function getCurrentTab() {
     return tab;
 }
 
-inputButton.addEventListener("click", addToUndesiredWordsList);
+inputButton.addEventListener("click", addToUndesiredWordsListIfInputBarNotEmpty);
 inputBar.addEventListener("keydown", event => {
     if(event.key == "Enter"){
-        addToUndesiredWordsList();
+        addToUndesiredWordsListIfInputBarNotEmpty();
     }
 })
 
-function addToUndesiredWordsList(){
-    const listElement = document.createElement("li");
-    const listContent = document.createTextNode(inputBar.value);
-
-    listElement.appendChild(listContent);
-
-    const list = document.getElementById("list-of-undesired-words");
-    list.appendChild(listElement);
-
-    clearTheInputBar();
+function addToUndesiredWordsListIfInputBarNotEmpty(){
+    if(inputBar.value){
+        const listElement = document.createElement("li");
+        const listContent = document.createTextNode(inputBar.value);
+    
+        listElement.appendChild(listContent);
+    
+        const list = document.getElementById("list-of-undesired-words");
+        list.appendChild(listElement);
+    
+        clearTheInputBar();
+    }
 }
 
 function clearTheInputBar(){
