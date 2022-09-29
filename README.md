@@ -37,3 +37,6 @@ Procurei por extensões que resolvessem o mesmo problema ou similares, e encontr
 - [ ] Adicionar redirecionador para reagir aos cliques nos ícones do GitHub e do LinkedIn
   - [ ] Verificar quais permissões são necessárias para abrir uma nova página
 - [ ] Adicionar Toggler para ativar e desativar a extensão
+- [ ] Verificar a possibilidade de adicionar testes
+- [ ] Verificar a possibilidade de adicionar uma forma de pagamento para contribuições
+- [ ] Verificar a possibilidade de adicionar diferentes idiomas
