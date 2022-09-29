@@ -1,3 +1,7 @@
+body, footer{
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
 .container{
     min-width: 15rem;
     min-height: 5rem;
@@ -34,17 +38,31 @@ section{
 }
 
 .words__tag{
+    padding: 0 0.5rem;
+
     display: flex;
     justify-content: space-between;
 
-    background-color: green;
+    background-color: #0275B1;
+    border-radius: 1.6rem;
+}
 
-    border: 1px solid black;
+.words__text{
+    margin-right: 0.5rem;
+
+    color: #fff;
+    font-weight: 600;
 }
 
 .words__bttn{
     all: unset;
 }
+    .words__bttn img{
+        height: 0.5rem;
+    }
+    .words__bttn:hover{
+        cursor: pointer;
+    }
 
 .footer__list{
     margin: 1rem 0 1rem 0;

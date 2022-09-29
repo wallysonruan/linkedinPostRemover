@@ -31,13 +31,9 @@ inputBar.addEventListener("keydown", event => {
 
 function IfInputBarNotEmpty__addToList(){
     if(inputBar.value){
-        const listElement = document.createElement("li");
-        const listContent = document.createTextNode(inputBar.value);
-        listElement.appendChild(listContent);
-        listElement.setAttribute("class", "words__item");
-    
+        const newTag = wordToTag(inputBar.value);
         const list = document.getElementsByClassName("words__list")[0];
-        list.appendChild(listElement);
+        list.appendChild(newTag);
     
         clearTheInputBar();
     }
@@ -45,4 +41,27 @@ function IfInputBarNotEmpty__addToList(){
 
 function clearTheInputBar(){
     inputBar.value = "";
+}
+
+function wordToTag(word){
+    const li = document.createElement("li");
+    const div = document.createElement("div");
+    const p = document.createElement("p");
+    const button = document.createElement("button");
+    const img = document.createElement("img");
+    const undesiredWord = document.createTextNode(word);
+
+    li.setAttribute("class", "words__item");
+    li.appendChild(div);
+    div.setAttribute("class", "words__tag");
+    div.appendChild(p);
+    div.appendChild(button);
+    p.appendChild(undesiredWord);
+    p.setAttribute("class", "words__text");
+    button.setAttribute("class", "words__bttn");
+    button.appendChild(img);
+    img.setAttribute("alt", "Delete item")
+    img.setAttribute("src", "/ASSETS/x-icon.png")
+
+    return li;
 }
