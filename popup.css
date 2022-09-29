@@ -1,5 +1,5 @@
 .container{
-    width: 15rem;
+    min-width: 15rem;
     min-height: 5rem;
 
     display: flex;
@@ -8,14 +8,54 @@
     align-items: center;
 }
 
-#input{
+section{
+    width: 100%;
+}
+
+.input__container{
     display: flex;
 }
 
-footer ul{
+.words__list{
     margin: 0;
     padding: 0;
+    width: 100%;
+
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+.words__item{
+    list-style: none;
+    margin: 0.2rem;
+}
+
+.words__tag{
+    display: flex;
+    justify-content: space-between;
+
+    background-color: green;
+
+    border: 1px solid black;
+}
+
+.words__bttn{
+    all: unset;
+}
+
+.footer__list{
+    margin: 1rem 0 1rem 0;
+    padding: 0;
+    background-color: red;
+
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
+
+.footer__item{
     list-style: none;
 }

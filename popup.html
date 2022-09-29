@@ -7,24 +7,30 @@
 <body>
     <div class="container">
         <section>
-            <label for="undesired-words-input">Type here the words you want to filter the posts with.</label>
-            <div id="input">
-                <input type="text" name="Field to type in the undesired words" id="undesired-words-input">
-                <input type="button" value="+" id="input-bttn">
+            <label for="words__input">Type here the words you want to filter the posts with.</label>
+            <div class="input__container">
+                <input type="text" name="Field to type in the undesired words" id="words__input">
+                <button id="input-bttn">+</button>
             </div>
         </section>
         <section>
             <p>Chosen words</p>
-            <ul id="list-of-undesired-words">
-                <li></li>
+            <ul class="words__list">
+                <li class="words__item">
+                    <div class="words__tag">
+                        <p class="words__text">Teste de item</p>
+                        <button class="words__bttn">+</button>
+                    </div>
+                </li>
+                <!--Injected via JS-->
             </ul>
         </section>
     </div>
 </body>
 <footer>
-    <ul>
-        <li>GIT</li>
-        <li>LK</li>
+    <ul class="footer__list">
+        <li class="footer__item">GIT</li>
+        <li class="footer__item">LK</li>
     </ul>
 </footer>
 </html>

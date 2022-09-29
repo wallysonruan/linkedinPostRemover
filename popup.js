@@ -1,4 +1,4 @@
-const inputBar = document.getElementById("undesired-words-input");
+const inputBar = document.getElementById("words__input");
 const inputButton = document.getElementById("input-bttn");
 
 document.addEventListener("DOMContentLoaded", async () => {
@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", async () => {
     if(activeTab.url.includes("linkedin.com/feed/")){
 
     }else{
-    const container = document.getElementsByClassName("container")[0];
-    container.innerHTML = 
-    `<div>
-        <p>You're not on the LinkedIn home page.</p>
-    </div>`;
+        const container = document.getElementsByClassName("container")[0];
+        container.innerHTML = 
+            `<div>
+                <p>You're not on the LinkedIn home page.</p>
+            </div>`;
     }
 });
 
@@ -22,21 +22,21 @@ async function getCurrentTab() {
     return tab;
 }
 
-inputButton.addEventListener("click", addToUndesiredWordsListIfInputBarNotEmpty);
+inputButton.addEventListener("click",  IfInputBarNotEmpty__addToList);
 inputBar.addEventListener("keydown", event => {
     if(event.key == "Enter"){
-        addToUndesiredWordsListIfInputBarNotEmpty();
+         IfInputBarNotEmpty__addToList();
     }
 })
 
-function addToUndesiredWordsListIfInputBarNotEmpty(){
+function IfInputBarNotEmpty__addToList(){
     if(inputBar.value){
         const listElement = document.createElement("li");
         const listContent = document.createTextNode(inputBar.value);
-    
         listElement.appendChild(listContent);
+        listElement.setAttribute("class", "words__item");
     
-        const list = document.getElementById("list-of-undesired-words");
+        const list = document.getElementsByClassName("words__list")[0];
         list.appendChild(listElement);
     
         clearTheInputBar();
