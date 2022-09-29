@@ -11,6 +11,8 @@ document.addEventListener("DOMContentLoaded", async () => {
             `<div>
                 <p>You're not on the LinkedIn home page.</p>
             </div>`;
+    }else{
+        removePostsFromFeed();
     }
 });
 
@@ -33,6 +35,7 @@ function IfInputBarNotEmpty__addToListElement(){
         inputBar__toListOfWords();
         fromList__toListElement();
         clearTheInputBar();
+        removePostsFromFeed();
     }
 }
 
@@ -75,4 +78,18 @@ function wordToTag(word){
     img.setAttribute("src", "/ASSETS/x-icon.png")
 
     return li;
+}
+
+function removePostsFromFeed(){
+    const posts =  document.getElementsByClassName("scaffold-finite-scroll");
+    console.log(posts);
+    `
+    for(let i = 0; i < posts.length; i++){
+        for(let i = 0; i < listOf.length; i++){
+            if(posts[i].textContent.includes(listOf[i])){
+                posts[i].remove();
+            }
+        }
+    }
+    `
 }

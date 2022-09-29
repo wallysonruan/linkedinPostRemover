@@ -3,11 +3,18 @@
     "name": "LinkedIn Post Remover",
     "version": "1.0",
     "description": "Removes all the posts that contain the words you doesn't like.",
+    "host_permissions": ["https://*.linkedin.com/*"],
     "permissions":[
         "tabs"
     ],
     "action":{
         "default_title": "I help you get rid of boring posts.",
         "default_popup": "popup.html"
-    }
+    },
+    "content_scripts": [
+        {
+          "matches": ["https://*.linkedin.com/feed/*"],
+          "js": ["contentScript.js"]
+        }
+      ]
 }
